@@ -67,7 +67,7 @@ export class Main{
       .subInPlace(viewport_u.div(2))
       .subInPlace(viewport_v.div(2));
 
-    const pixel00_loc = viewport_upper_left.add(pixel_delta_u.add(pixel_delta_v)).scaleInPlace(0.5);
+    const pixel00_loc = viewport_upper_left.add(pixel_delta_u.add(pixel_delta_v).scaleInPlace(0.5));
 
     for (let j = 0; j < image_height; j++) {
       console.log(`Scanlines remaining: ${image_height - j}`)
